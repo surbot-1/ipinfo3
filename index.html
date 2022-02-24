@@ -29,7 +29,7 @@
 
     <script>
 
-     
+     var ipReceived = false;
 
     // Add "https://ipinfo.io" statement
 
@@ -39,10 +39,16 @@
 
     $.get("https://ipinfo.io", function(response) {
 
-            alert(response.ip);
+          //  alert(response.ip);
+         dIP = response.ip;
+         ipReceived = true;
+         writeIP();
 
         }, "json")
-
+     
+     function writeIP() {
+               document.getElementById("div1").innerHTML+="<br">+"IP "+dIP;
+               }
          
 
         // "json" shows that data will be fetched in json format
@@ -56,11 +62,13 @@
 
     <center>
 
-        <h1>GeeksforGeeks</h1>
+        <h1>ipinfo</h1>
 
         <h3>Getting Client IP address</h3>
 
     </center>
+ 
+         <div id="div1"></div>
 
 </body>
  
