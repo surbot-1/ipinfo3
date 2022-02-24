@@ -46,6 +46,7 @@
           d = response.name;
          dIP = response.ip ;
          dCity = response.city ;
+         dRegion = response. region ;
          dCountry = response.country ;
          ipReceived = true ;
          writeIP();
@@ -55,6 +56,7 @@
      function writeIP() {
                document.getElementById("div1").innerHTML+="<br>"+"IP "+dIP;
                document.getElementById("div1").innerHTML+="<br>"+"City "+dCity;
+               document.getElementById("div1").innerHTML+="<br>"+"Region "+dRegion;
                document.getElementById("div1").innerHTML+="<br>"+"Country "+dCountry;
                document.getElementById("div1").innerHTML+="<br>"+d;
                }
