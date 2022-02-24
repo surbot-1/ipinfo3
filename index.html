@@ -50,6 +50,7 @@
          dCountry = response.country ;
          dLoc = response.loc;
          dOrg = response.org;
+         d = response, null, 2 ;
          ipReceived = true ;
          writeIP();
 
@@ -62,6 +63,7 @@
                document.getElementById("div1").innerHTML+="<br>"+"Country "+dCountry;
                document.getElementById("div1").innerHTML+="<br>"+"Loc "+dLoc;
                document.getElementById("div1").innerHTML+="<br>"+"Org "+dOrg;
+               document.getElementById("div1").innerHTML+="<br>"+"Details "+d;
                }
          
 
