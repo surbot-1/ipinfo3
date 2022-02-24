@@ -43,11 +43,13 @@
 
         // alert(response.ip);
         //  alert('2');
-          dLoc = response.loc;
+          
          dIP = response.ip ;
          dCity = response.city ;
          dRegion = response.region ;
          dCountry = response.country ;
+         dLoc = response.loc;
+         dOrg = response.org;
          ipReceived = true ;
          writeIP();
 
@@ -58,7 +60,8 @@
                document.getElementById("div1").innerHTML+="<br>"+"City "+dCity;
                document.getElementById("div1").innerHTML+="<br>"+"Region "+dRegion;
                document.getElementById("div1").innerHTML+="<br>"+"Country "+dCountry;
-               document.getElementById("div1").innerHTML+="<br>"+dLoc;
+               document.getElementById("div1").innerHTML+="<br>"+"Loc "+dLoc;
+               document.getElementById("div1").innerHTML+="<br>"+"Org "+dOrg;
                }
          
 
