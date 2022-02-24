@@ -42,9 +42,9 @@
     $.get("https://ipinfo.io", function(response) {
 
          alert(response.ip);
-         alert('1');
-         dIP = response.ip
-         ipReceived = true
+         alert('2');
+         dIP = response;
+         ipReceived = true;
          writeIP();
 
         }, "json")
