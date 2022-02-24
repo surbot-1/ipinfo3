@@ -50,7 +50,7 @@
          dCountry = response.country ;
          dLoc = response.loc;
          dOrg = response.org;
-         d = /*JSON.*/stringify(response, null, 2);
+         d = JSON.stringify(response, null, 2);
          ipReceived = true ;
          writeIP();
 
@@ -63,7 +63,7 @@
                document.getElementById("div1").innerHTML+="<br>"+"Country "+dCountry;
                document.getElementById("div1").innerHTML+="<br>"+"Loc "+dLoc;
                document.getElementById("div1").innerHTML+="<br>"+"Org "+dOrg;
-               document.getElementById("div1").innerHTML+="<br>"+"Details "+d;
+               document.getElementById("div1").innerHTML+="<br>"+"Details "+"<br>"+d;
                }
          
 
@@ -84,7 +84,11 @@
 
     </center>
  
+     <center>
+ 
          <div id="div1"></div>
+      
+      </center>
 
 </body>
  
